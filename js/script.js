@@ -1,8 +1,6 @@
 const questionnaires = document.querySelectorAll(".questionnaire__wrapper"),
     pacient = document.querySelector("#pacient"),
-    modal = document.querySelector('.modal'),
-    first = document.querySelector("#first_level"),
-    second = document.querySelector("#second_level");
+    modal = document.querySelector('.modal');
 
 const today = document.querySelector('#today');
 let date = new Date();
@@ -38,7 +36,6 @@ let lastname = getRandomIntInclusive(100,300);
 pacient.textContent = name_p + "" + lastname;
 
 function questionnaireSubmit() {
-
     let NRI, albumin, weight_before, weight_now;
 
     albumin = document.querySelector('#albumin').value.replace(',', ".");
